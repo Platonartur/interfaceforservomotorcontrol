@@ -1,0 +1,11 @@
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\interfaceforservomotorcontrol.csprojAssemblyReference.cache
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\loginformcombobox.Form1.resources
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\loginformcombobox.Form2.resources
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\loginformcombobox.Properties.Resources.resources
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\interfaceforservomotorcontrol.csproj.GenerateResource.cache
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\interfaceforservomotorcontrol.csproj.CoreCompileInputs.cache
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\loginformcombobox.exe
+C:\Users\plato\source\repos\loginformcombobox\obj\Debug\loginformcombobox.pdb
+C:\Users\plato\source\repos\loginformcombobox\bin\Debug\loginformcombobox.exe.config
+C:\Users\plato\source\repos\loginformcombobox\bin\Debug\loginformcombobox.exe
+C:\Users\plato\source\repos\loginformcombobox\bin\Debug\loginformcombobox.pdb

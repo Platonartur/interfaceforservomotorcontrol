@@ -8,33 +8,34 @@ namespace loginformcombobox
 {
     public partial class Form2 : Form
     {
-        SerialPort port;
+        private SerialPort _serial;
         public Form2()
         {
             InitializeComponent();
-            init();
         }
 
-        private void init()
+        public void Init()
         {
-            port = new SerialPort();
-            port.PortName = "COM6";
-            port.BaudRate = 9600;
+            _serial = new SerialPort();
+            _serial.PortName = "COM6";
+            _serial.BaudRate = 9600;
             try
             {
-                port.Open();
+                _serial.Open();
+                this.Show();
             }
             catch(Exception e1)
             {
                 MessageBox.Show(e1.Message);
+                this.Close();
             }
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            if (port.IsOpen)
+            if (_serial.IsOpen)
             {
-                port.WriteLine(Val_trackBar.Value.ToString());
+                _serial.WriteLine(Val_trackBar.Value.ToString());
                 Degree_label.Text = "Degree =" + Val_trackBar.Value.ToString();
             }
         }
@@ -50,11 +51,8 @@ namespace loginformcombobox
                 connection.Open();
                 sqlExpression = String.Format("UPDATE SettingsServoMotorTable SET portname='{0}' WHERE baudrate={1}", portname, baudrate);
             }
-        }   
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e) => this.Close();
     }
 }
