@@ -44,12 +44,12 @@ namespace loginformcombobox
         {
             string connectionString = @"Data Source=desktop-tnhqm7j\sqlexpress;Initial Catalog=cmblogin;Integrated Security=True";
             string portname = textBox1.Text.ToString();
-            int baudrate = Int32.Parse(textBox2.Text);
-            string sqlExpression = String.Format("INSERT INTO SettingsServoMotorTable (portname, baudrate) VALUES ('{0}', {1})", portname, baudrate);
+            int baudrate = int.Parse(textBox2.Text);
+            string sqlExpression = string.Format("INSERT INTO SettingsServoMotorTable (portname, baudrate) VALUES ('{0}', {1})", portname, baudrate);
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                sqlExpression = String.Format("UPDATE SettingsServoMotorTable SET portname='{0}' WHERE baudrate={1}", portname, baudrate);
+                sqlExpression = string.Format("UPDATE SettingsServoMotorTable SET portname='{0}' WHERE baudrate={1}", portname, baudrate);
             }
         }
 

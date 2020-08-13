@@ -37,8 +37,9 @@ namespace loginformcombobox
                 if (comboBox1.SelectedIndex != 0)
                     continue;
 
-                Form2 form = new Form2();
-                form.Init();
+                using (Form2 form = new Form2())
+                    form.Init();
+
                 this.Close();
             }
         }
